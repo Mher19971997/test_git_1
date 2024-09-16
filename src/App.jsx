@@ -3,10 +3,14 @@ import './App.css';
 import AppRoutes from './routes/AppRoutes';
 import MainLayouts from './layouts/MainLayouts';
 
-const  App = () => {
-  const [text, setText] = useState(1)
+
+const  App = ({count}) => {
+
   return (
     <div className="App">
+      <div className='test'>
+sdsadasdas
+      </div>
       <MainLayouts>
         <AppRoutes />
       </MainLayouts>
