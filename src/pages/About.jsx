@@ -10,10 +10,6 @@ const About = () => {
     navigate('/');
   };
 
-  const params = useParams();
-  console.log(params);
-  
-
   const users = [
     {
       name: "Gago",

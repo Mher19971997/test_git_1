@@ -1,22 +1,21 @@
-import './App.css';
-import AppRoutes from './routes/AppRoutes';
-import MainLayouts from './layouts/MainLayouts';
+import "./App.css";
+import AppRoutes from "./routes/AppRoutes";
+import MainLayouts from "./layouts/MainLayouts";
+import DemoComponent from "./components/infoUseLayoutEffect/InfoUseLayoutEffect";
+import Parent from "./components/infoUseMemo/InfoUseMemo";
+// import Parent from "./components/infoUseCallback/Parent";
 
-
-const  App = ({count}) => {
-
-  
-
+const App = ({ count }) => {
   return (
     <div className="App">
-      <div className='test'>
-
+      <div className="test">
+        <Parent />
       </div>
-      <MainLayouts>
+      {/* <MainLayouts>
         <AppRoutes />
-      </MainLayouts>
+      </MainLayouts> */}
     </div>
   );
-}
+};
 
 export default App;

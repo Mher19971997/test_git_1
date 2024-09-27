@@ -8,14 +8,10 @@ import Style from './Main.module.css'
 
 const MainLayouts = ({children}) => {
   const [isActive, setIsActive] = useState(false)
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(10)
 
   const foo = () => {
-    setCount(count)
-    setCount(prev => prev + 1)
-    setCount(prev => prev + 1)
-    setCount(prev => prev + 1)
-    setCount(prev => prev + 1)
+    setCount("katu")
   }
 
   return ( 

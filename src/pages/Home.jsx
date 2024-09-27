@@ -6,23 +6,22 @@ const Home = () => {
 
   const [inp, setInp] = useState('test');
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log(inp);
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     console.log(inp);
+  //   }, 1000);
 
-    return () => {
-      clearInterval(interval)
-    };
+  //   return () => {
+  //     clearInterval(interval)
+  //   };
+ 
+  // },[inp]);
 
-  },[inp]);
-
-  useEffect(() => {
-    return () => {
-      console.log("es el chkam");
-    };
-    
-  },[inp]);
+  // useEffect(() => {
+  //   return () => {
+  //     console.log("es el chkam");
+  //   };
+  // },[inp]);
 
 
   const goToProfile = () => {
